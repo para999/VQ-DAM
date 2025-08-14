@@ -11,8 +11,8 @@ import time
 
 def main():
     if args.seed is not None:
-        random.seed(args.seed)  # 随机生成一个种子
-    torch.manual_seed(args.seed)  # 设置随机数种子
+        random.seed(args.seed)  
+    torch.manual_seed(args.seed) 
 
     # creat training & testing dataset and load
     dataset_train = SRDataset(args, name=args.data_train, train=True)
@@ -238,3 +238,4 @@ def crop_border_test(img, scale):
 
 if __name__ == '__main__':
     main()
+
