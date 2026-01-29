@@ -1,4 +1,4 @@
-from options.option_vqdam_isox4 import args
+from options.option_vqdam_iso_x4 import args
 from model.vqdam import VQDAM
 from data.srdataset import SRDataset
 from torch.utils.data import DataLoader
@@ -238,4 +238,5 @@ def crop_border_test(img, scale):
 
 if __name__ == '__main__':
     main()
+
 
